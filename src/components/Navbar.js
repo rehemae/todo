@@ -17,7 +17,6 @@ const Navbar=() =>{
               <div className="rounded bg-purple-400 text-white font-bold w-10 h-10 flex justify-center text-3xl pt-0.5">T</div>
               <div className="text-gray-700 font-semibold ml-2">To Do</div>
           </a>
-          {/* NAVBAR TOGGLE BUTTON  */}
           <button
           onClick={() => setMobMenu(!mobMenu)} 
           className="block md:hidden text-gray-700 p-2 rounded hover:border focus:border focus:bg-gray-100 my-2 mr-5" 
@@ -27,10 +26,10 @@ const Navbar=() =>{
           {/* NAV LINKS */}
           <ul className={mobMenu ? showMenu : hideMenu}>
             <li className="px-3 cursor-pointer hover:bg-purple-50 flex items-center hover:text-gray-800">
-              <Link to='/home'>Link One</Link>
+              <Link to='/home'>Home</Link>
             </li>
             <li className="px-3 cursor-pointer hover:bg-purple-50 flex items-center hover:text-gray-800">
-              <Link to='/second'>Link Two</Link>
+              <Link to='/second'>Card</Link>
             </li>
           </ul>
         </div>
